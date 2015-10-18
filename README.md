@@ -1,10 +1,10 @@
 # CSE.321.ass.1
-## Name: Richard Edmon Abdelshahid Moines
-## Bench Number: 33749
+### Name: Richard Edmon Abdelshahid Moines
+### Bench Number: 33749
 
 1. A class is an extendable program code to create objects
 
-2.
+2. A
 
 3. A class is used to create and define the behaviour of objects depending on Abstraction
 
@@ -32,7 +32,7 @@ class bankAccount {
 
 8. Default constructor is implicitely created by the compiler to set a default value for the object (initialization)
 
-9.
+9. A
 
 10. this is a pointer of member functions and used to refer to relative objects
     *this is used to return reference to the calling object
