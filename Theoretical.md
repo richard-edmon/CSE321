@@ -4,13 +4,14 @@
 
 1. A class is an extendable program code to create objects
 
-2. A
+2. In a class, different Access Modifiers are used (Public, Private and Protected). A class can have multiple public, protected, or private labeled sections. A public member is accessible from anywhere outside the class but within a program. A private member variable or function cannot be accessed, or even viewed from outside the class. Only the class and neighbouring functions can access private members. A protected member variable or function is very similar to a private member but it provides one additional benefit that they can be accessed in child classes which are called derived classes
 
 3. A class is used to create and define the behaviour of objects depending on Abstraction
 
-4. Class function members are used to protect the data members of the same class
+4. Each instance of a class (object) will allocate memory to store it's own set of data. But all those objects share the same set of member functions.
 
-5. ```
+5. You can find the class delclared below.
+```
 class bankAccount {
  private:
   string name;
@@ -25,7 +26,6 @@ class bankAccount {
   void withdraw(double n);
   ~bankAccount();
 };
-
 ```
 
 6. Constructors are called to initiate an object, while destructors are called to delete the object
