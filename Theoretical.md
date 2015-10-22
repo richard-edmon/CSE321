@@ -11,21 +11,21 @@
 4. Each instance of a class (object) will allocate memory to store it's own set of data. But all those objects share the same set of member functions.
 
 5. You can find the class delclared below.
-```
-class bankAccount {
- private:
-  string name;
-  string number;
-  double balance;
+     ```
+     class bankAccount {
+      private:
+       string name;
+       string number;
+       double balance;
 
- public:
-  bankAccount();
-  bankAccount(const string & nam, const string & num, double bal);
-  void show();
-  void deposit(double n);
-  void withdraw(double n);
-  ~bankAccount();
-};
+      public:
+       bankAccount();
+       bankAccount(const string & nam, const string & num, double bal);
+       void show();
+       void deposit(double n);
+       void withdraw(double n);
+       ~bankAccount();
+     };
 ```
 
 6. Constructors are called to initiate an object, while destructors are called to delete the object
