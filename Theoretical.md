@@ -12,6 +12,8 @@
 
 5. You can find the class delclared below.
      ```
+     #include <string>
+     using namespace std;
      class bankAccount {
       private:
        string name;
@@ -28,13 +30,46 @@
      };
 ```
 
-6. Constructors are called to initiate an object, while destructors are called to delete the object
+6. Constructors are called to initiate an object, a constructor is called automatically if no constructor is explicitly called, while destructors are called to delete the object or when the object expires
 
 7. bankAccount();
+```
+     bankAccount(const string & nam, const string & num, double bal);
+     };
+```
 
-8. Default constructor is implicitely created by the compiler to set a default value for the object (initialization)
+8. A default constructor either has no arguments or has defaults for all the arguments. Having a default constructor enables you to declare objects without initializing them, even if you’ve already defined a custom constructor
 
-9. A
+9. Using getters:
+     ```
+       #ifndef STOCK20_H_
+       #define STOCK20_H_
+       #include <string>
+       using namespace std;
+       class Stock {
+       private:
+           string company;
+           long shares;
+           double share_val;
+           double total_val;
+           void set_tot() { total_val = shares * share_val; }
+       public:
+           Stock();
+           Stock(const string & co, long n, double pr);
+           ~Stock() {};
+           void buy(long num, double price);
+           void sell(long num, double price);
+           void update(double price);
+           void show() const;
+           const Stock & topval(const Stock & s) const;
+           //Added methods
+           int numshares() const { return shares; }
+           double shareval() const { return share_val; }
+           double totalval() const { return total_val; }
+           const string & co_name() const { return company; }
+       };
+```
+
 
 10. this is a pointer of member functions and used to refer to relative objects
     *this is used to return reference to the calling object
