@@ -33,9 +33,8 @@
 6. Constructors are called to initiate an object, a constructor is called automatically if no constructor is explicitly called, while destructors are called to delete the object or when the object expires
 
 7. Constructor:
-```
-       bankAccount(const string & nam, const string & num, double bal);
-     };
+     ```
+bankAccount(const string & nam, const string & num, double bal);
 ```
 
 8. A default constructor either has no arguments or has defaults for all the arguments. Having a default constructor enables you to declare objects without initializing them, even if you’ve already defined a custom constructor
