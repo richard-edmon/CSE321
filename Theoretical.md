@@ -32,9 +32,9 @@
 
 6. Constructors are called to initiate an object, a constructor is called automatically if no constructor is explicitly called, while destructors are called to delete the object or when the object expires
 
-7. bankAccount();
+7. Constructor:
 ```
-     bankAccount(const string & nam, const string & num, double bal);
+       bankAccount(const string & nam, const string & num, double bal);
      };
 ```
 
