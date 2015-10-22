@@ -10,7 +10,7 @@
 
 4. Class function members are used to protect the data members of the same class
 
-5. 
+5. ```
 class bankAccount {
  private:
   string name;
@@ -25,6 +25,8 @@ class bankAccount {
   void withdraw(double n);
   ~bankAccount();
 };
+
+```
 
 6. Constructors are called to initiate an object, while destructors are called to delete the object
 
